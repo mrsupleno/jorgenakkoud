@@ -609,3 +609,30 @@ section:first-of-type::before {
     border: 3px solid var(--color-primary);
     box-shadow: 0 8px 32px rgba(212, 175, 55, 0.2);
 }
+
+/* WhatsApp Contact Card - Verde característico */
+.whatsapp-card {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    border-color: #25D366;
+}
+
+.whatsapp-card:hover {
+    background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+    border-color: #128C7E;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 40px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-card .contact-info h3,
+.whatsapp-card .contact-info p {
+    color: #ffffff;
+}
+
+.whatsapp-icon {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px);
+}
+
+.whatsapp-icon i {
+    color: #ffffff !important;
+}
