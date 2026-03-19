@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jorge.mais.top/">
     <meta property="og:title" content="Jorge Nakkoud - Analista de Sistemas Sênior">
-    <meta property="og:description" content="30+ anos de expercência em desenvolvimento de software, arquitetura de sistemas e cloud computing">
+    <meta property="og:description" content="30+ anos de experiência em desenvolvimento de software, arquitetura de sistemas e cloud computing">
     
     <title>Jorge Nakkoud - Analista de Sistemas Sênior</title>
     
@@ -24,17 +24,101 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Hero redesign */
+        .hero {
+            background: linear-gradient(135deg, #0a0f1e 0%, #0d1b3e 50%, #0a0f1e 100%);
+            padding: 80px 0;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .hero-text {
+            order: 1;
+        }
+        
+        .hero-image {
+            order: 2;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .avatar-container {
+            width: 280px;
+            height: 280px;
+        }
+        
+        .avatar-photo {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top center;
+            border: 4px solid #C9A84C;
+            box-shadow: 0 0 40px rgba(201,168,76,0.4);
+        }
+        
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+            z-index: 9999;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37,211,102,0.7);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero-text {
+                order: 2;
+                text-align: center;
+            }
+            
+            .hero-image {
+                order: 1;
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-image">
-                    <div class="avatar-container">
-                        <img src="assets/jorge.jpg" alt="Jorge Nakkoud" class="avatar-photo">
-                    </div>
-                </div>
                 <div class="hero-text">
                     <h1 class="hero-title">Jorge Nakkoud</h1>
                     <p class="hero-subtitle">Analista de Sistemas Sênior</p>
@@ -48,6 +132,11 @@
                     </div>
                     <div class="hero-cta">
                         <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="avatar-container">
+                        <img src="assets/jorge.jpg" alt="Jorge Nakkoud" class="avatar-photo">
                     </div>
                 </div>
             </div>
@@ -118,7 +207,7 @@
                         <i class="fas fa-project-diagram"></i>
                     </div>
                     <h3>Análise de Sistemas</h3>
-                    <p>Análise detalhada de requisitos, modelagem de processos e definição de arquiteturas efciazes</p>
+                    <p>Análise detalhada de requisitos, modelagem de processos e definição de arquiteturas eficazes</p>
                 </div>
 
                 <div class="skill-card">
@@ -199,6 +288,11 @@
             <p class="footer-note">Desenvolvido com dedicação e paixão por tecnologia.</p>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5567998092001" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
